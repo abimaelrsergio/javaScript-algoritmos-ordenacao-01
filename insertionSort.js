@@ -2,6 +2,7 @@ const livros = require('./listaLivros');
 const troca = require('./troca');
 
 // Faça: Desk Checking
+// 
 
 function insertionSort(lista) {
     livros.forEach((_, atual) => {
