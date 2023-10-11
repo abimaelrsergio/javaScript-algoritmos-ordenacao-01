@@ -1,12 +1,14 @@
 const livros = require('./listaLivros');
 const menorValor = require('./menorValor');
 
+// Faça: Desk Checking
+
 livros.forEach((_, indice) => {
     let menor = menorValor(livros, indice); 
     let livroAtual = livros[indice];
     let livroMenorPreco = livros[menor];
     livros[indice] = livroMenorPreco;
-    livros[menor] = livroAtual;    
+    livros[menor] = livroAtual;
 })
 /*
 for (let atual = 0; atual < livros.length - 1; atual++) {  
